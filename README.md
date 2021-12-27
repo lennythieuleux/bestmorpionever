@@ -1,2 +1,2 @@
 # bestmorpionever
-Player here : https://github.com/lennythieuleux/bestmorpionever
+Play here : https://bestmorpionever.netlify.app/
