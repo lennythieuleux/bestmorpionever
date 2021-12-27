@@ -10,7 +10,7 @@ body {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding: 0 5%;
+        padding: 0 50px;
 
         h1 {
             border: 3px #141414 solid;
@@ -65,6 +65,28 @@ body {
 
         .nes-icon {
             vertical-align: sub;
+        }
+    }
+
+    .share-twitter{
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+        
+        a{
+            background-color: rgb(224, 241, 255);
+            padding: 20px 10px;
+            border-radius: 10px;
+            font-size: 12px;
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+
+        .nes-icon {
+            vertical-align: super;
+            margin: 0 10px 2px 0;
         }
     }
 }
