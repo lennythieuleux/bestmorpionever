@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
     font-family: 'Press Start 2P', cursive;
 
-    @media(max-width: 800px){
+    @media(max-width: 800px) {
         justify-content: initial;
         align-items: initial;
     }
@@ -18,7 +18,7 @@ body {
         padding: 0 50px;
         margin-bottom: 50px;
 
-        @media(max-width: 800px){
+        @media(max-width: 800px) {
             margin: 50px 0;
         }
 
@@ -27,7 +27,7 @@ body {
             padding: 15px 25px;
             text-align: center;
 
-            @media(max-width: 800px){
+            @media(max-width: 800px) {
                 font-size: 20px;
             }
         }
@@ -40,7 +40,7 @@ body {
                 position: absolute;
                 top: 70%;
 
-                @media(max-width: 800px){
+                @media(max-width: 800px) {
                     font-size: 15px;
                     top: 50%;
                 }
@@ -81,7 +81,7 @@ body {
         margin: 25px auto;
         min-height: 50px;
 
-        @media(max-width: 800px){
+        @media(max-width: 800px) {
             font-size: 15px;
             max-width: 300px;
         }
@@ -91,25 +91,25 @@ body {
         }
     }
 
-    #restart{
-        @media(max-width: 800px){
+    #restart {
+        @media(max-width: 800px) {
             font-size: 15px;
             margin: 0 auto;
         }
     }
 
-    .share-twitter{
+    .share-twitter {
         position: absolute;
         right: 50px;
         bottom: 50px;
-        
-        a{
+
+        a {
             background-color: rgb(224, 241, 255);
             padding: 20px 10px;
             border-radius: 10px;
             font-size: 12px;
 
-            &:hover{
+            &:hover {
                 text-decoration: none;
             }
         }

@@ -42,8 +42,6 @@ function startGame() {
     document.querySelector('#restart').innerHTML = '<button onclick="restartGame()">Recommencer la partie</button>';
     document.querySelector('#startGame').remove();
 
-    whichPlayerTurn();
-
     let cells = document.querySelectorAll('.cell');
 
     for (let cell of cells) {
@@ -53,22 +51,27 @@ function startGame() {
         cell.addEventListener('click', (e) => {
             if (isGameOver != true) {
                 whichPlayerTurn();
-
-                //Display the player's sign
-                cell.innerHTML = playerSign;
-
-                //Update the grid with right player's sign for verification
                 cellIndex = cell.getAttribute('key');
                 cellRow = cell.parentElement.getAttribute('key');
-                grid[cellRow][cellIndex] = playerSign;
+                console.log(cellIndex)
 
-                checkHorizontal();
+                if (grid[cellRow][cellIndex] === null) {
+                    //Display the player's sign
+                    cell.innerHTML = playerSign;
 
-                turn++;
+                    //Update the grid with right player's sign for verification
+                    grid[cellRow][cellIndex] = playerSign;
+
+                    checkHorizontal();
+
+                    turn++;
+                }
+
             } else {
-                console.log('hoho')
+                console.log('none')
             }
         })
+
     }
 }
 
