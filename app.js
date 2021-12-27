@@ -53,7 +53,6 @@ function startGame() {
                 whichPlayerTurn();
                 cellIndex = cell.getAttribute('key');
                 cellRow = cell.parentElement.getAttribute('key');
-                console.log(cellIndex)
 
                 if (grid[cellRow][cellIndex] === null) {
                     //Display the player's sign
@@ -67,8 +66,6 @@ function startGame() {
                     turn++;
                 }
 
-            } else {
-                console.log('none')
             }
         })
 
