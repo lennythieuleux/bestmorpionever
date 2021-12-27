@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+
+    header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 5%;
+
+        h1 {
+            border: 3px #141414 solid;
+            padding: 15px 25px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        #start {
+            display: flex;
+            justify-content: center;
+
+            #startGame {
+                position: absolute;
+                top: 70%;
+            }
+        }
+    }
+
+    main {
+        .row {
+            border: 3px solid #000;
+            height: 100px;
+            width: 300px;
+            margin: -3px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            &:nth-child(3) {
+                border-top: 0;
+            }
+        }
+
+        .cell {
+            border-left: 3px solid #000;
+            border-right: 3px solid #000;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            margin: -1px;
+            // cursor: pointer;
+        }
+    }
+
+    .congrats {
+        font-size: 25px !important;
+        text-align: center;
+        margin: 25px 0;
+        min-height: 50px;
+
+        .nes-icon {
+            vertical-align: sub;
+        }
+    }
+}
