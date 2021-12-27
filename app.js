@@ -39,7 +39,7 @@ function startGame() {
     });
 
     document.querySelector('main').innerHTML = displayGrid;
-    document.querySelector('#restart').innerHTML = '<button onclick="restartGame()">Recommencer la partie</button>';
+    document.querySelector('#restart').innerHTML = '<button onclick="restartGame()">Restart</button>';
     document.querySelector('#startGame').remove();
 
     let cells = document.querySelectorAll('.cell');
@@ -77,7 +77,7 @@ function startGame() {
 
 function checkWin() {
     if (pointsToWin === 3) {
-        document.body.querySelector(".congrats").innerHTML = `Les ${playerSign} ont gagné la partie !  <i class="nes-icon trophy"></i>`;
+        document.body.querySelector(".congrats").innerHTML = `Team ${playerSign} won the game !  <i class="nes-icon trophy"></i>`;
         isGameOver = true;
     }
 }
@@ -168,7 +168,7 @@ function checkGridFull() {
 
     if (totalPoints === 9 && isGameOver === false) {
         isGameOver = true;
-        document.body.querySelector(".congrats").innerHTML = 'Match nul !  <i class="nes-icon close"></i>';
+        document.body.querySelector(".congrats").innerHTML = 'It\'s a draw. Play again !  <i class="nes-icon close"></i>';
     }
 }
 
